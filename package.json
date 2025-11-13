@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "build": "npm run compile",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -19,6 +21,9 @@
     "openai": "^6.8.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
     "jest": "^29.6.1",
     "nodemon": "^2.0.22",
     "supertest": "^6.3.3"
